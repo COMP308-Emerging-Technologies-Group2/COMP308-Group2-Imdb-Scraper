@@ -6,7 +6,7 @@ let router = express.Router();
 let indexController = require('../controllers/index');
 
 /* GET */
-router.get('/scrape', (req, res, next) => {
+router.get('/mostPopularMovies', (req, res, next) => {
   indexController.scrapeMovieDetails(req, res);
 });
 

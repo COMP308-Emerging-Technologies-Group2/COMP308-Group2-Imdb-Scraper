@@ -9,7 +9,6 @@ let index = require('./routes/index'); // top level routes
 let app = express();
 
 // view engine setup
-app.set('view engine', 'ejs');
 
 // route redirects
 app.use('/', index);
