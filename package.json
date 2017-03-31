@@ -14,11 +14,11 @@
     "node": ">=6.0.0",
     "npm": ">=3.5.0"
   },
-  "description": "## Welcome to Lesson 8 - Intro to Angular 2 and MVC Revisited",
+  "description": "## COMP308-Group2-Imdb-Scraper",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/"
+    "url": "git+https://github.com/COMP308-Emerging-Technologies-Group2/COMP308-Group2-Imdb-Scraper"
   },
   "keywords": [
     "NodeJS",
@@ -28,7 +28,7 @@
   "author": "Tony Bogun",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/issues"
+    "url": "https://github.com/COMP308-Emerging-Technologies-Group2/COMP308-Group2-Imdb-Scraper/issues"
   },
-  "homepage": "https://github.com/#readme"
+  "homepage": "https://github.com/COMP308-Emerging-Technologies-Group2/COMP308-Group2-Imdb-Scraper/#readme"
 }

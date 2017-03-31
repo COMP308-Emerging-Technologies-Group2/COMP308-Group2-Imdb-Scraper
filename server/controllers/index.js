@@ -1,10 +1,18 @@
 let request = require('request');
 let cheerio = require('cheerio');
 
-module.exports.scrapeMovieDetails = function (req, res) {
-    url = 'http://www.imdb.com/chart/moviemeter';
+module.exports.scrapeMostPopularMovies = function (req, res) {
+    let url = 'http://www.imdb.com/chart/moviemeter';
+    scraper(req, res, url, 'mostPopularMovies');
+};
 
-    request(url, function (error, response, html) {
+module.exports.scrapeMostPopularTvs = function (req, res) {
+    let url = 'http://www.imdb.com/chart/tvmeter';
+    scraper(req, res, url, 'mostPopularTvs');
+};
+
+function scraper(req, res, url, arrayName) {
+    request(url, (error, response, html) => {
         if (!error) {
             let mostPopularMovies = [];
 
@@ -29,9 +37,8 @@ module.exports.scrapeMovieDetails = function (req, res) {
 
                 mostPopularMovies.push(movie);
             }
-            jsonRes = {
-                'mostPopularMovies': mostPopularMovies
-            }
+            let jsonRes = {};
+            jsonRes[arrayName] = mostPopularMovies;
             res.status(200).json(jsonRes);
         }
     });
