@@ -5,14 +5,11 @@ let router = express.Router();
 // require the index controller
 let indexController = require('../controllers/index');
 
-/* GET home page. wildcard */
-router.get('/', (req, res, next) => {
-  indexController.DisplayHome(req, res);
+/* GET */
+router.get('/scrape', (req, res, next) => {
+  indexController.scrapeMovieDetails(req, res);
 });
 
-/* GET contact page. */
-router.get('/contact', (req, res, next) => {
-  indexController.DisplayContact(req, res);
-});
+
 
 module.exports = router;

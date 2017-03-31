@@ -8,7 +8,8 @@
   "dependencies": {
     "express"    : "latest",
     "request"    : "latest",
-    "cheerio"    : "latest"
+    "cheerio"    : "latest",
+    "ejs": "latest"
   },
   "engines": {
     "node": ">=6.0.0",
