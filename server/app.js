@@ -8,7 +8,12 @@ let index = require('./routes/index'); // top level routes
 
 let app = express();
 
-// view engine setup
+// enable cross-origin resource sharing
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
 // route redirects
 app.use('/', index);

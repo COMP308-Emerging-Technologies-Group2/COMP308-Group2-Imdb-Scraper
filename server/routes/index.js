@@ -6,12 +6,12 @@ let router = express.Router();
 let indexController = require('../controllers/index');
 
 /* GET - most popular movies */
-router.get('/mostPopularMovies', (req, res, next) => {
+router.get('/mostPopularMovies', (req, res) => {
   indexController.scrapeMostPopularMovies(req, res);
 });
 
 /* GET - most popular movies */
-router.get('/mostPopularTvs', (req, res, next) => {
+router.get('/mostPopularTvs', (req, res) => {
   indexController.scrapeMostPopularTvs(req, res);
 });
 

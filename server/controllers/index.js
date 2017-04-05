@@ -37,11 +37,10 @@ function scraper(req, res, url, arrayName) {
 
                 mostPopularMovies.push(movie);
             }
+
             let jsonRes = {};
             jsonRes[arrayName] = mostPopularMovies;
 
-            res.header("Access-Control-Allow-Origin", "*");
-            res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
             res.status(200).json(jsonRes);
         }
     });
