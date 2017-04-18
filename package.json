@@ -6,9 +6,9 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express"    : "latest",
-    "request"    : "latest",
-    "cheerio"    : "latest"
+    "express": "latest",
+    "request": "latest",
+    "cheerio": "latest"
   },
   "engines": {
     "node": ">=6.0.0",
@@ -30,5 +30,9 @@
   "bugs": {
     "url": "https://github.com/COMP308-Emerging-Technologies-Group2/COMP308-Group2-Imdb-Scraper/issues"
   },
-  "homepage": "https://github.com/COMP308-Emerging-Technologies-Group2/COMP308-Group2-Imdb-Scraper/#readme"
+  "homepage": "https://github.com/COMP308-Emerging-Technologies-Group2/COMP308-Group2-Imdb-Scraper/#readme",
+  "devDependencies": {
+    "@types/express": "^4.0.35",
+    "@types/node": "^7.0.13"
+  }
 }

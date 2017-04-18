@@ -5,6 +5,7 @@ var cheerio = require('cheerio');
 
 // define routers
 let index = require('./routes/index'); // top level routes
+let tvSchedule = require('./routes/tvrelease'); // tv schedule
 
 let app = express();
 
@@ -17,5 +18,6 @@ app.use((req, res, next) => {
 
 // route redirects
 app.use('/', index);
+app.use('/tvschedule', tvSchedule);
 
 module.exports = app;
